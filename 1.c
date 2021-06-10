@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     while(1)
     {
         read_size = read(fd_in, buff, 1024);
-        if(read_size <= 0) break;//檢查輸入大小，<= 0時即為讀完或出錯
+        if(read_size <= 0) break;
         write(fd_out, buff, read_size);
     }
 
